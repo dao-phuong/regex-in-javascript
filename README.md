@@ -1,4 +1,5 @@
 # Tuts about how to using Regular Expression In Javascript
+Thanks to Flavio Copes (https://flaviocopes.com/) for the simple to understand tutorial
 
 ## Key Idea
 ```
@@ -8,19 +9,19 @@ The rule of thumb is that simple regular expressions are simple to read and writ
 ## Create Regex
 Using object
 ```
-const regex = new RegExp('hey')
+const regex = new RegExp('hello')
 ```
 or using regex literals
 ```
-const regex = /hey/
+const regex = /hello/
 ```
 
 ## Check if string contain Regex
 ```
-const regex = /hey/;
+const regex = /hello/;
 
-regex.test('hey');             //true
-regex.test('blah blah');       //false
-regex.test('he');              //false
-regex.test('blab hey blahh');  //true
+regex.test('hello');             //true
+regex.test('fuga hoge');         //false
+regex.test('he');                //false
+regex.test('blab hello blahh');  //true
 ```
