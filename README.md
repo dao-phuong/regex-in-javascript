@@ -119,3 +119,13 @@ If u wanna search one string **or** another, use the `|` operator.
 /hoge|fuga/.test('fuga');    //true
 
 ```
+
+## Quantifier
+You wanna check if a string has one digit in it and nothing else it will be like this:
+```
+/^\d$/
+```
+But if u wanna check if string is empty or has one digit, u will have:
+```
+/^\d?$/
+```
