@@ -95,3 +95,10 @@ When the `^` is in the range, it's **Negate this range**
 /[^A-Za-z0-9]/.test('A');       //false
 /[^A-Za-z0-9]/.test('@');       //true
 ```
+
+## Shortcut regex of range
+* `\d` matches any digit. **= `[0-9]`**
+* `\D` matches any character that's not a digit. **= `[^0-9]`**
+* `\w` matches any alphanumeric character. **= `[A-Za-z0-9]`**
+* `\W` matches any non-alphanumeric character. **=`[^A-Za-z0-9]`**
+
