@@ -82,5 +82,16 @@ You can check if a string contains one and only one character in a range by usin
 /^[A-Za-z0-9]$/
 
 /^[A-Za-z0-9]$/.test('A');      //true
-/^[A-Za-z0-9]$/.test('Ab');     /false
+/^[A-Za-z0-9]$/.test('Ab');     //false
+```
+
+## Negating a pattern
+When the `^` character at the beginning of a pattern, it's the **beginning of a string**
+When the `^` is in the range, it's **Negate this range**
+
+```
+/[^A-Za-z0-9]/.test('a');       //false
+/[^A-Za-z0-9]/.test('1');       //false
+/[^A-Za-z0-9]/.test('A');       //false
+/[^A-Za-z0-9]/.test('@');       //true
 ```
