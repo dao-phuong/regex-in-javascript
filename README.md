@@ -74,3 +74,13 @@ Ranges can be combined
 /[A-Za-z0-9]/.test('1') //true
 /[A-Za-z0-9]/.test('A') //true
 ```
+
+### Matching a range item multiple times
+You can check if a string contains one and only one character in a range by using `^` and `$` char:
+*Note: Flavio Copes said that "You can check if a string.... by using `-` char:", I don't understand why
+```
+/^[A-Za-z0-9]$/
+
+/^[A-Za-z0-9]$/.test('A');      //true
+/^[A-Za-z0-9]$/.test('Ab');     /false
+```
