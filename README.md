@@ -112,3 +112,10 @@ When the `^` is in the range, it's **Negate this range**
 * `.` matches any character that is not a newline char (unless you use the `s` flag, explained later on)
 * `[^]` matches any character, including newline character. It's usefull on multiline strings
 
+## Regular expression choices
+If u wanna search one string **or** another, use the `|` operator.
+```
+/hoge|fuga/.test('hoge');    //true
+/hoge|fuga/.test('fuga');    //true
+
+```
