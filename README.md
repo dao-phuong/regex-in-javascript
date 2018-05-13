@@ -102,3 +102,13 @@ When the `^` is in the range, it's **Negate this range**
 * `\w` matches any alphanumeric character. **= `[A-Za-z0-9]`**
 * `\W` matches any non-alphanumeric character. **=`[^A-Za-z0-9]`**
 
+## The other regex
+* `\s` matches any whitespace character: spaces, tabs, newlines and Unicode spaces
+* `\S` matches any character that's not a whitespace
+* `\0` matches null
+* `\n` matches newline character
+* `\t` matches a tab character
+* `\uXXXX` matches unicode character with code `XXXX` (requires the `u` flag0
+* `.` matches any character that is not a newline char (unless you use the `s` flag, explained later on)
+* `[^]` matches any character, including newline character. It's usefull on multiline strings
+
