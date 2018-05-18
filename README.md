@@ -132,7 +132,7 @@ But if u wanna check if string is empty or has one digit, u will have:
 but what if you want to match multiple digits?
 You can do it in 4 ways, using +, *, {n} and {n,m}. Let’s look at these one by one.
 
-***+***
+*+*
 Match one or more than one (>- 1) items
 ```
 /^\d+$/ 
