@@ -143,3 +143,14 @@ Match one or more than one (>- 1) items
 /^\d+$/.test(' ');          //false
 /^\d+$/.test('1a');         //false
 ```
+
+** * **
+Match 0 or more (>= 0) items
+```
+/^\d+$/ 
+/^\d*$/.test('12')          //true
+/^\d*$/.test('14')          //true
+/^\d*$/.test('144343')      //true
+/^\d*$/.test('')            //true
+/^\d*$/.test('1a')          //false
+```
