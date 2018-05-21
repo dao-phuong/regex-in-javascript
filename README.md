@@ -154,3 +154,14 @@ Match 0 or more (>= 0) items
 /^\d*$/.test('')            //true
 /^\d*$/.test('1a')          //false
 ```
+
+**{n}**
+Match exactly `n` items
+```
+/^\d{3}$/ 
+
+/^\d{3}$/.test('657')           //true
+/^\d{3}$/.test('35')            //false
+/^\d{3}$/.test('9435')          //false
+/^[A-Za-z0-9]{3}$/.test('Abc')  //true
+```
