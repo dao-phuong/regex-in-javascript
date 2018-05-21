@@ -167,7 +167,7 @@ Match exactly `n` items
 ```
 
 **{n,m}**
-Match between `n` and `m` times*
+Match between `n` and `m` times:
 ```
 /^\d{3,5}$/ 
 /^\d{3,5}$/.test('123')     //true
@@ -175,4 +175,14 @@ Match between `n` and `m` times*
 /^\d{3,5}$/.test('12345')   //true 
 /^\d{3,5}$/.test('123456')  //false
 /^\d{3,5}$/.test('12')      //false
+```
+`m` can be omitted to have an open ending, so you have at least `n` items*
+```
+/^\d{3,}/
+
+/^\d{3,}/.test('12')      //false
+/^\d{3,}/.test('123')     //true
+/^\d{3,}.test('22235')    //true
+
+
 ```
