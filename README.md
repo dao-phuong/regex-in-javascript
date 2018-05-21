@@ -165,3 +165,14 @@ Match exactly `n` items
 /^\d{3}$/.test('9435')          //false
 /^[A-Za-z0-9]{3}$/.test('Abc')  //true
 ```
+
+**{n,m}**
+Match between `n` and `m` times*
+```
+/^\d{3,5}$/ 
+/^\d{3,5}$/.test('123')     //true
+/^\d{3,5}$/.test('1234')    //true
+/^\d{3,5}$/.test('12345')   //true 
+/^\d{3,5}$/.test('123456')  //false
+/^\d{3,5}$/.test('12')      //false
+```
